@@ -59,7 +59,10 @@ body {
   padding: 2rem;
   background-color: var(--color-white);
   width: 44rem;
+  border-radius: 1.5rem;
   &__img-container {
+  border-radius: 1rem;
+    overflow: hidden;
   }
 
   &__img {
@@ -71,9 +74,12 @@ body {
   }
 
   &__title {
+    font-size: 2.4rem;
   }
 
   &__info {
+    font-family: "Outfit", Serif;
+    font-size: 1.4rem;
   }
 
   &__prep {
