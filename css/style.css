@@ -26,6 +26,13 @@ body {
   font-style: normal;
   box-sizing: border-box; }
 
+* {
+  font-family: "Outfit", Serif; }
+
+h2 {
+  font-family: "Young Serif", sans-serif;
+  color: var(--color-primary); }
+
 .container {
   display: flex;
   justify-content: center;
@@ -34,11 +41,17 @@ body {
   background-color: var(--color-eggshell);
   padding: 10rem 0; }
 
+.separator {
+  color: var(--color-eggshell); }
+
 .recipe-card {
   padding: 2rem;
   background-color: var(--color-white);
   width: 44rem;
-  border-radius: 1.5rem; }
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; }
   .recipe-card__img-container {
     border-radius: 1rem;
     overflow: hidden; }
@@ -49,4 +62,44 @@ body {
     font-size: 2.4rem; }
   .recipe-card__info {
     font-family: "Outfit", Serif;
-    font-size: 1.4rem; }
+    font-size: 1rem; }
+  .recipe-card__prep {
+    background-color: var(--color-eggshell);
+    padding: 2rem;
+    border-radius: 1rem; }
+  .recipe-card__prep-title {
+    color: var(--color-secondary);
+    font-weight: 700; }
+  .recipe-card__prep-list {
+    padding-left: 2rem;
+    padding-top: 1rem; }
+  .recipe-card__prep-list-item {
+    font-weight: 400;
+    color: var(--color-wenge-brown); }
+    .recipe-card__prep-list-item strong {
+      color: var(--color-black);
+      font-weight: 600; }
+  .recipe-card__ingredient-title {
+    color: var(--color-primary); }
+  .recipe-card__ingredient-list {
+    list-style-position: outside;
+    padding-left: 1rem; }
+  .recipe-card__ingredient-list-item {
+    font-weight: 400;
+    color: var(--color-wenge-brown);
+    padding-left: .5rem; }
+  .recipe-card__instruction-title {
+    color: var(--color-primary); }
+  .recipe-card__instruction-list {
+    list-style-position: outside;
+    padding-left: 1rem; }
+  .recipe-card__instruction-list-item {
+    padding-left: 1rem;
+    color: var(--color-wenge-brown); }
+  .recipe-card__nutrition-tr:not(:last-child) .recipe-card__nutrition-td {
+    border-bottom: 1px solid var(--color-grey);
+    padding-bottom: 1rem;
+    padding-top: 1rem; }
+  .recipe-card__nutrition-td:last-child {
+    color: var(--color-primary);
+    font-weight: 700; }

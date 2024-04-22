@@ -43,6 +43,15 @@ body {
 
 }
 
+* {
+  font-family: "Outfit", Serif;
+}
+
+h2 {
+  font-family: "Young Serif", sans-serif;
+  color: var(--color-primary);
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -52,16 +61,25 @@ body {
   background-color: var(--color-eggshell);
   padding: 10rem 0;
 }
-.separator{
+
+.separator {
+
+  color: var(--color-eggshell);
 
 }
+
 .recipe-card {
   padding: 2rem;
   background-color: var(--color-white);
   width: 44rem;
   border-radius: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
   &__img-container {
-  border-radius: 1rem;
+    border-radius: 1rem;
     overflow: hidden;
   }
 
@@ -79,43 +97,75 @@ body {
 
   &__info {
     font-family: "Outfit", Serif;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   &__prep {
+
+    background-color: var(--color-eggshell);
+    padding: 2rem;
+    border-radius: 1rem;
   }
 
   &__prep-title {
+
+    color: var(--color-secondary);
+    font-weight: 700;
   }
 
   &__prep-list {
+    //list-style: none;
+    padding-left: 2rem;
+    padding-top: 1rem;
+
   }
 
   &__prep-list-item {
+
+    font-weight: 400;
+    color: var(--color-wenge-brown);
+
+    strong {
+      color: var(--color-black);
+      font-weight: 600;
+    }
   }
 
   &__ingredient {
   }
 
   &__ingredient-title {
+    color: var(--color-primary);
   }
 
   &__ingredient-list {
+    list-style-position: outside;
+    padding-left: 1rem;
   }
 
   &__ingredient-list-item {
+    font-weight: 400;
+    color: var(--color-wenge-brown);
+    padding-left: .5rem;
   }
 
   &__instruction {
+
   }
 
   &__instruction-title {
+    color: var(--color-primary);
+
   }
 
   &__instruction-list {
+    list-style-position: outside;
+    padding-left: 1rem;
   }
 
   &__instruction-list-item {
+    padding-left: 1rem;
+    color: var(--color-wenge-brown);
   }
 
   &__nutrition {
@@ -131,11 +181,24 @@ body {
   }
 
   &__nutrition-tr {
+
+    &:not(:last-child) .recipe-card__nutrition-td {
+      border-bottom: 1px solid var(--color-grey);
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
   }
 
   &__nutrition-td {
+
+    &:last-child{
+      color: var(--color-primary);
+      font-weight: 700;
+    }
   }
 }
+
+
 
 
 
