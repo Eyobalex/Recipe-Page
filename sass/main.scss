@@ -60,6 +60,14 @@ h2 {
 
   background-color: var(--color-eggshell);
   padding: 10rem 0;
+
+  @media only screen and (max-width: 375px) {
+    justify-content: start;
+    align-items: start;
+    width: auto;
+    padding: 0;
+
+  }
 }
 
 .separator {
@@ -77,6 +85,15 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @media only screen and (max-width: 375px) {
+    padding: 0;
+    width: 37.5rem;
+
+    > *:not(:first-child){
+      margin: 2rem;
+    }
+  }
 
   &__img-container {
     border-radius: 1rem;
